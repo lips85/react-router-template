@@ -1,6 +1,6 @@
 import type { Route } from "./+types/home";
 import HomePage from "~/common/pages/home-page";
-import Navigation from "~/common/components/navigation";
+
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -10,10 +10,6 @@ export function meta({ }: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return (
-    <div className="py-28">
-      <Navigation isLoggedIn={false} hasNotifications={false} hasMessages={false} />
-      <HomePage />
-    </div>
-  );
+  return
+  <HomePage />
 }
